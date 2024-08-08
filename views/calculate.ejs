@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<div class="relative h-screen"> 
+
+
+    <nav> 
+        <div class="px-4 mx-5 py-2 flex justify-between">
+         <h2 class="font-bold text-3xl text-orange-600/90 tracking-tighter hover:none">Chegg</h2>
+         <div class="flex gap-4 justify-center items-center" >
+         <a class="text-lg font-semibold " href="">Subjects</a>
+         <a class="text-lg font-semibold " href="/earning">Your earnings</a>
+         </div>
+         <a class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh " href="/logout">LOGOUT</a>
+       
+        </div>
+        <hr>
+     </nav>   
+
+<content>
+    <div class="px-12 py-4"> 
+    <h1 class="text-2xl tracking-tighter font-bold text-3xl text-orange-600/90 tracking-tighter hover:none mb-5"> <%= subject %> </h1>
+   <form class="flex flex-col w-auto gap-5" action="/calculation" method="post">
+   
+   
+    <div class="flex gap-4">
+    <label class="text-bold text-xl ">1x :</label>
+    <input type="number" placeholder="Number of questions" name="one">
+    </div>
+    
+    
+    <div class="flex gap-4">
+        <label class="text-bold text-xl ">1.2x :</label>
+        <input type="number" placeholder="Number of questions"  name="two">
+        </div>
+        
+        
+        <div class="flex gap-4">
+            <label class="text-bold text-xl ">1.4x :</label>
+            <input type="number" placeholder="Number of questions"  name="three">
+            </div> 
+
+
+            <div class="flex gap-4">
+                <label class="text-bold text-xl ">1.6x :</label>
+                <input type="number" placeholder="Number of questions"  name="four">
+                </div> 
+    <input class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh w-fit mt-5 " type="submit" value="Calculate">
+   </form>
+
+   <div> 
+    <h2 class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer  transition tracking-tigh w-fit mt-10 " >Your Earnings: <span class="mx-3">&#8377   </span>  </h2>
+   </div>
+     
+</div>
+</div>
+</content>
+
+<footer>
+    <div class="bg-black p-5 w-full absolute z-10 bottom-0 text-center text-white"> 
+        © 2024 Chegg Inc. All rights reserved.
+    </div>
+
+</footer>
+</div>
+
+
+
+
+
+</body>
+</html>

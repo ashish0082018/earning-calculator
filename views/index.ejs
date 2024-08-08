@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen w-full relative">
+        <img class="h-screen w-full " src="https://img.freepik.com/free-photo/paper-curled-orange-page-texture_23-2148402461.jpg?t=st=1723041414~exp=1723045014~hmac=ac5a5176be20e447c3f8014f1412fd15aaa77e4ae3604cfd7c0b8350dea187da&w=996" alt="">
+        <div class="h-auto max-w-md w-full bg-white z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl flex flex-col p-4 md:p-6 lg:p-8">
+            <h2 class="text-center font-bold text-2xl md:text-3xl lg:text-4xl mt-5 text-orange-500 tracking-tight">REGISTER</h2>
+            <form class="flex flex-col gap-4 md:gap-6 mx-2 my-2 mt-6" action="/register" method="post">
+                <input class="px-3 py-2 outline-none shadow-md font-semibold rounded-md" type="text" placeholder="Username" name="username" >
+                <input class="px-3 py-2 outline-none shadow-md font-semibold rounded-md" type="email" placeholder="Email" name="email">
+                <input class="px-3 py-2 outline-none shadow-md font-semibold rounded-md" type="password" placeholder="Password" name="password">
+                <input class="mt-4 bg-orange-600 text-white py-2 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition" type="submit" value="REGISTER">
+            </form>
+            <div class="flex flex-col mt-5 text-center"> 
+                <span class="text-xl font-bold text-orange-600 ">OR</span>
+                <a  class="mt-4 bg-orange-600 text-white py-2 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tight"  href="/login">LOGIN</a>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
