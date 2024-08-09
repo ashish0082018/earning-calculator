@@ -13,9 +13,10 @@
 
     <nav> 
         <div class="px-4 mx-5 py-2 flex justify-between">
-         <h2 class="font-bold text-3xl text-orange-600/90 tracking-tighter hover:none">Chegg</h2>
+            <a  class="font-bold text-3xl text-orange-600/90 tracking-tighter hover:none" href="landing">Chegg</a>
+
          <div class="flex gap-4 justify-center items-center" >
-         <a class="text-lg font-semibold " href="">Subjects</a>
+         <a class="text-lg font-semibold " href="/subjects">Subjects</a>
          <a class="text-lg font-semibold " href="/earning">Your earnings</a>
          </div>
          <a class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh " href="/logout">LOGOUT</a>
@@ -52,9 +53,10 @@
                 <label class="text-bold text-xl ">1.6x :</label>
                 <input type="number" placeholder="Number of questions"  name="four" value=<%= four %>>
                 </div> 
-    <input class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh w-fit mt-5 " type="submit" value="Calculate">
+    <input class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh w-fit mt-5 " type="submit" value="Calculate"> 
+    <a class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh w-fit mt-5" href="/subjects">Save</a>
    </form>
-
+   
    <div> 
     <h2 class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer  transition tracking-tigh w-fit mt-10 " >Your Earnings: <span class="mx-3">&#8377 <%= total %>  </span>  </h2>
    </div>

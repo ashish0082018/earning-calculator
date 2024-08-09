@@ -96,5 +96,9 @@ app.post("/calculation",(req,res)=>{
     res.render("calculated",{total: Math.floor(sum), one,two,three,four})
 })
 
+app.get("/subjects",(req,res)=>{
+    res.render("subjects")
+})
+
 
 app.listen(3003)
