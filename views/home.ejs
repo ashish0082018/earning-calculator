@@ -6,26 +6,26 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="relative " >
 
-<div class="relative h-screen"> 
+<div > 
 
 
     <nav> 
-        <div class="px-4 mx-5 py-2 flex justify-between">
+        <div class="px-4 mx-5 py-2 flex justify-between  border-b-3 border-black shadow shadow-xl">
          
          <a  class="font-bold text-3xl text-orange-600/90 tracking-tighter hover:none" href="landing">Chegg</a>
          <div class="flex gap-4 justify-center items-center" >
-         <a class="text-lg font-semibold " href="/subjects">Subjects</a>
-         <a class="text-lg font-semibold " href="/earning">Your earnings</a>
+         <a class="text-lg font-semibold px-2 py-1 hover:bg-orange-400 rounded-lg" href="/subjects">Subjects</a>
+         <a class="text-lg font-semibold px-2 py-1 hover:bg-orange-400 rounded-lg" href="/earning">Your earnings</a>
          </div>
-         <a class="bg-orange-600 text-white py-1 px-4 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh " href="/logout">LOGOUT</a>
+         <a class="bg-orange-600 text-white py-1 px-3 rounded-lg font-semibold text-lg cursor-pointer hover:bg-orange-700  hover:shadow-2xl transition tracking-tigh " href="/logout">LOGOUT</a>
      
         </div>
      </nav>   
 
 <content>
-     <div class="h-96 bg-orange-200/30 mt-12 ">
+     <div class="h-96 bg-orange-200/30 mt-12 shadow-2xl mb-7">
     <div class="px-10 py-2 flex h-full w-full "> 
         <div class="left w-2/3 py-8 pl-20 ">
             <h1 class="tracking-tighter text-5xl  font-semibold mt-6 mb-7">Earn with Chegg</h1>
@@ -34,17 +34,73 @@
             <button class="bg-orange-600 text-white py-1 px-5 rounded-full font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh mt-9"><a href="">Earn More</a> </button>
 
         </div>
-        <div class="right h-full bg-black w-1/3 mr-12 rounded-xl overflow-hidden">
+        <div class="right h-full bg-black w-1/3 mr-12 rounded-xl overflow-hidden shadow-2xl">
             <img class="w-full h-full object-cover" src="https://www.cheggindia.com/wp-content/uploads/2024/03/Homepage_Desktop_Hero-1024x683.png.webp" alt="">
         </div>
     </div>
 
      
 </div>
+
+<div class="w-full h-20 text-center py-8"> 
+ <h1 class="text-bold text-3xl tracking-tight font-bold">Earn with Chegg</h1>
+ <p class="py-3 px-1 text-lg tracking-tighter">Hiring subject matter experts. Work at your own convenience and get paid for every question answered.</p>
+ <a class="bg-orange-600 text-white py-1 px-3 rounded-xl font-semibold text-lg cursor-pointer hover:bg-orange-700 transition tracking-tigh " href="">APPLY</a>
+</div>
+
+
+
+
+
+<div class="w-full h-96 bg-orange-300/30 py-10 px-12 flex gap-7 justify-center px-5 mt-36 "> 
+    <card> 
+
+<div class="w-80 h-80 bg-white rounded-lg  overflow-hidden shadow-2xl  "> 
+    <div class="h-1/2 w-full overflow-hidden"> 
+        <img  class="" src="https://www.cheggindia.com/wp-content/uploads/elementor/thumbs/EO-psys9l3q6vdomh69a2utfu5dm751991icryhc3wge0.jpg" alt="">
+    </div>
+    <h2 class="text-xl font-bold tracking-tighter mt-3 mb-2 px-3 py-1 ">Earn Online</h2>
+    <div class="text-center text-md font-semibold leading-4 tracking-tight py-1 px-3">
+        Supplement your income with the most trending ways to earn online from the comfort of your home. 
+    </div>
+</div>
+    </card>
+
+
+    <card> 
+
+        <div class="w-80 h-80 bg-white rounded-lg  overflow-hidden shadow-2xl  "> 
+            <div class="h-1/2 w-full overflow-hidden"> 
+                <img  class="" src="https://www.cheggindia.com/wp-content/uploads/elementor/thumbs/GettyImages-1371959004-psys9smfpjnz7cvc263tzs92da3yytvd1t6d6blb08.jpg" alt="">
+            </div>
+            <h2 class="text-xl font-bold tracking-tighter mt-3 mb-2 px-3 py-1 ">Career Guidance</h2>
+            <div class="text-center text-md font-semibold leading-4 tracking-tight py-1 px-3">
+                Secure your dream job. Explore hundreds of resources to achieve your career goals.
+            </div>
+        </div>
+    </card>
+
+    <card> 
+
+        <div class="w-80 h-80 bg-white rounded-lg  overflow-hidden shadow-2xl  "> 
+            <div class="h-1/2 w-full overflow-hidden"> 
+                <img  class="" src="https://www.cheggindia.com/wp-content/uploads/elementor/thumbs/2-psysr1xr71aidlsua4o89xgr0z1lardxr8ebe802rc.png" alt="">
+            </div>
+            <h2 class="text-xl font-bold tracking-tighter mt-3 mb-2 px-3 py-1 ">Govt Exams
+            </h2>
+            <div class="text-center text-md font-semibold leading-4 tracking-tight py-1 px-3">
+                Get latest updates, syllabus, study material and prepare for top government jobs.
+            </div>
+        </div>
+     </card>
+
+     
+
+</div>
 </content>
 
 <footer>
-    <div class="bg-black p-5 w-full absolute z-10 bottom-0 text-center text-white"> 
+    <div class="bg-black p-5 mt-10 w-full  text-center text-white"> 
         © 2024 Chegg Inc. All rights reserved.
     </div>
 

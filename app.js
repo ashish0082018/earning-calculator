@@ -5,6 +5,7 @@ const userModel = require('./models/login')
 const bcrypt=require('bcrypt')
 const cookieParser=require('cookie-parser')
 const jwt=require('jsonwebtoken')
+// const subjectModel = require('./models/subject')
 
 
 app.set("view engine","ejs")
@@ -92,13 +93,18 @@ app.post("/submit",(req,res)=>{
 
 app.post("/calculation",(req,res)=>{
     let {one,two,three,four}=req.body
+   
     let sum=(one*87)+(two*104.4)+(three*122)+(four*139.2)
     res.render("calculated",{total: Math.floor(sum), one,two,three,four})
+    console.log(one,two,three,four)
 })
 
 app.get("/subjects",(req,res)=>{
     res.render("subjects")
 })
+
+
+
 
 
 app.listen(3003)
